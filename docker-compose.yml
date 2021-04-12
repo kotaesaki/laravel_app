@@ -15,3 +15,10 @@ services:
         ports:
             - 10080:80
         working_dir: /work
+    db:
+        build: ./infra/mysql
+        volumes:
+            - db-store:/var/lib/mysql
+
+volumes:
+    db-store:
