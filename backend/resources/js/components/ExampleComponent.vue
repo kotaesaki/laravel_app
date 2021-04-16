@@ -26,6 +26,5 @@
                 this.$store.dispatch('line_auth/Login');
             },
         },
-        
     }
 </script>
